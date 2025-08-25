@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="kotak">
+                <img src="loc.png" class="loc">
+                <input type="text" placeholder="Enter your location">
+                <button class="search">
+                    <img src="search-interface-symbol.png" style="width: 20px;">
+                </button>
+            </div>
+            <div class="Weather">
+                <img src="cloudy (1).png" class="gambar_weather">
+                <h1 class="temperature">0 <span>&deg;C</span></h1>
+                <p class="description">Broken clouds</p>
+                <h3 style="display: flex; margin-top: 10px;" class="nama_daerah">
+                    <img src="location.png" style="width: 20px;" >
+                    <span class="daerah"></span>
+                </h3>
+            </div>
+            <div class="weather_detail">
+                <div class="humid">
+                    <img src="humidity.png" alt="">
+                    <div style="display: flex; flex-direction: column; margin-left: 5px;">
+                        <span>0</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img src="wind.png" alt="">
+                    <div style="display: flex; flex-direction: column; margin-left: 5px;">
+                        <span>0</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="not_found">
+                <div class="box_not">
+                    <img src="error-404.png" alt="">
+                    <p>Oops! Your location not found!</p>
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
